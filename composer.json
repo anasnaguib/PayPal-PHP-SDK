@@ -9,6 +9,9 @@
         {
             "name": "PayPal",
             "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
+        },
+        {
+            "name": "Anas Naguib"
         }
     ],
     "require": {
