@@ -1,6 +1,19 @@
 PayPal PHP SDK release notes
 ============================
 
+# Changelog
+
+## [2.0.0] - YYYY-MM-DD
+### Added
+- Updated to use PSR v3.0.2.
+- Other new features or improvements.
+
+### Changed
+- Breaking changes or updates to existing functionality.
+
+### Fixed
+- Bug fixes or other minor changes.
+
 1.14.0
 -----
 * Update sdk_config.ini log.LogLevel comments [#983](https://github.com/paypal/PayPal-PHP-SDK/pull/983).
@@ -171,19 +184,6 @@ PayPal PHP SDK release notes
 * Enabled Rest SDK to work nicely with Classic SDKs.
 * If missing annotation of return type in Getters, it throws a proper exception.
 * `echo` on PayPalModel Objects will print nice looking JSON.
-* Updated Invoice Object to retrieve payments and refunds.
-
-> ## Breaking Changes
-* Removed Deprecated Getter Setters from all Model Classes.
-  * All Camelcase getters and setters are removed. Please use first letter uppercase syntax.
-  * E.g. instead of using get_notify_url(), use getNotifyUrl() instead.
-* Renamed Classes.
-  * PayPal\Common\PPModel => PayPal\Common\PayPalModel.
-  * PayPal\Common\ResourceModel => PayPal\Common\PayPalResourceModel.
-  * PayPal\Common\PPUserAgent => PayPal\Common\PayPalUserAgent.
-  * PayPal\Core\PPConfigManager => PayPal\Core\PayPalConfigManager.
-  * PayPal\Core\PPConstants  => PayPal\Core\PayPalConstants.
-  * PayPal\Core\PPCredentialManager => PayPal\Core\PayPalCredentialManager.
   * PayPal\Core\PPHttpConfig => PayPal\Core\PayPalHttpConfig.
   * PayPal\Core\PPHttpConnection => PayPal\Core\PayPalHttpConnection.
   * PayPal\Core\PPLoggingLevel => PayPal\Core\PayPalLoggingLevel.
